@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Memory Gallery 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Shantell Sans', cursive;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ffe4ec, #fff6fa);
+      min-height: 100vh;
+      padding: 20px;
+      color: #444;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff4f8b;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .subtitle {
+      margin-bottom: 30px;
+      color: #777;
+      font-size: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.8);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.12);
+      transition: 0.3s ease;
+      backdrop-filter: blur(8px);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 14px;
+    }
+
+    .card-title {
+      color: #ff4f8b;
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #ff6b9a;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .card img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Our Memory Gallery 💕</h1>
+    <p class="subtitle">Every picture tells our little love story ✨</p>
+
+    <div class="gallery">
+
+      <div class="card">
+        <img src="photo1.jpg" alt="First Memory">
+        <div class="card-content">
+          <div class="card-title">Our First Date</div>
+          <div class="card-text">The day everything started. Still my favorite memory forever 💖</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="photo2.jpg" alt="Second Memory">
+        <div class="card-content">
+          <div class="card-title">Favorite Moment</div>
+          <div class="card-text">That smile, that laugh, that moment—I want it forever 🌸</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="photo3.jpg" alt="Third Memory">
+        <div class="card-content">
+          <div class="card-title">Our Adventure</div>
+          <div class="card-text">Every place feels better when I’m with you ✈️💕</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="photo4.jpg" alt="Fourth Memory">
+        <div class="card-content">
+          <div class="card-title">My Favorite Us</div>
+          <div class="card-text">This photo reminds me how lucky I am to have you 💗</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Happy Birthday My Love 🎂💘<br>
+      Thank you for being my favorite person.
+    </div>
+  </div>
+
+</body>
+</html>
